@@ -1,0 +1,93 @@
+<html>
+<head>
+<title> MULTIMEDIA </title>
+<link rel="stylesheet" href="file:///C:/Users/Acer/Documents/New%20folder/IMD311/RESOURCES/CSS/css/clock.css" 
+</head>
+<body>
+
+<h1 <!...INSERTING VIDEO...>
+<video width="100%" autoplay muted loop>
+<source src="C:\Users\Acer\Documents\New folder\IMD311\EXERSICE\MULTIMEDIA WEEK 9\video\introduction.mp4"
+</video>
+</h1>
+<br><br><br><br>
+
+<hr>
+<center> <b> MY FAVOURITE SONG PLAYLIST </b> </center>
+<hr>
+
+<h2 <!...INSERTING AUDIO...>
+<center>
+<audio controls>
+<source src="file:///C:/Users/Acer/Documents/New%20folder/IMD311/RESOURCES/CSS/audio/close%20with%20desires.mp3" type="audio/mpeg"
+</audio>
+</center>
+</hr2> 
+
+
+<h3 <!...INSERTING JAVA APPLET AUDIO...>
+<hr>
+<center> <b> INSERTING AUTO CLOCK </b> </center>
+<hr>
+<br>
+</h3>
+
+<!...TO CALL CSS....>
+<div id="clock"> 8:10:45 </div>
+<!...TO LINK FOR A CURRENT TIME...>
+<script src="clock2.js"> </script>
+<br><br>
+
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+	let time = new Date();
+	let hour = time.getHours();
+	let min = time.getMinutes();
+	let sec = time.getSeconds();
+	am_pm = "AM";
+
+	if (hour > 12) {
+		hour -= 12;
+		am_pm = "PM";
+	}
+	if (hour == 0) {
+		hr = 12;
+		am_pm = "AM";
+	}
+
+	hour = hour < 10 ? "0" + hour : hour;
+	min = min < 10 ? "0" + min : min;
+	sec = sec < 10 ? "0" + sec : sec;
+
+	let currentTime = hour + ":"
+			+ min + ":" + sec + am_pm;
+
+	document.getElementById("clock")
+			.innerHTML = currentTime;
+}
+showTime();
+</script>
+
+<h5 <!...APPLYING MARQUEE...>
+<hr>
+<marquee> THIS IS MARQUEE TEXT </marquee> 
+<hr>
+<br><br><br><br><br><br><br><br>
+<h5>
+
+
+<h4 <!...APPLYING PDF FILE...>
+<hr>
+<center> <b> EMBEDDING PDF FILE </b> </center>
+<hr>
+<br>
+<center>
+<iframe src="file:///C:/Users/Acer/Documents/New%20folder/IMD311/EXERSICE/MULTIMEDIA%20WEEK%209/LI%20Briefing.pdf" width="80%" height="800px" </iframe>
+</center>
+<br><br><br><br><br><br><br><br>
+<h4>
+
+
+</body>
+</html>
